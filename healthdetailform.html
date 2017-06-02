@@ -1,0 +1,47 @@
+
+<Files healthdetailform.html>
+
+</Files>
+<html>
+    
+<head>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+    
+<body>
+       
+    <fieldset>
+        <h1>Enter Health details : </h1> 
+              <form name="input" action="healthdetail.php"  method="post">
+            	    <p style="white-space:pre">
+                    <br/>  Gender:      <input  class="form-control" type="text" name="gender" required>
+                    <br/>  Height (in inches)   <input class="form-control" type="text" step="any" name="height" required>
+                    <br/>  Weight (in Kg)      <input class="form-control" type="text" name="weight" required> 
+                    <br/>  Activity Level     <input class="form-control" type="text" name="activity" required>
+                    <br/>  Age    <input class="form-control" type="text" name="age" required>
+                   
+
+                    <br/><input type="submit" value="Calculate Calories">
+                    <h4>Calories Required Is {{cal_required}} per week .</h4>
+
+
+                    </p>
+
+             </form>
+
+    </fieldset>
+    <button ng-click="change_state()">Go To Meal Planner</button>
+
+ </body>
+</html>
+
+
+
+
+
+

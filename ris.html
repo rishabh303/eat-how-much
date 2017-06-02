@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+
+    <script src="app.js"></script>
+        
+   <link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto:400,300,100,500'>
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css'>
+   <link rel='stylesheet prefetch' href='https://www.google.com/fonts#UsePlace:use/Collection:Roboto+Slab:400,700,300,100'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+
+
+    <script src="healthdetailformCtrl.js"></script>
+    <script src="reminder/js/index.js"></script>
+    <script src="routing.js"></script>
+    <script src="mealplanner/script.js"></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/jquery-2.1.0.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/110131/responsive.js'></script>
+    <script src="blog/js/blog.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+
+    <script src='http://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js'></script>
+    <script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCTPEEhUdoWWHHfnY_O16e-coun-rbDYDA&libraries=places'></script>
+    <script src="google/js/index.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="google/css/style.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie|Open+Sans:400,700" rel="stylesheet" />
+    
+
+
+
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bgvideo/css/style.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+
+    <title>Eat How Much</title>
+
+
+
+
+
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        })
+    </script>
+
+</head>
+<body>
+
+<div class="loader"></div>
+
+
+<header>
+
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="navbar-header">
+            <img class="logo_class" src="images/logo.jpg" alt="logo" />
+            <a class="navbar-brand" style="color: fuchsia"><i class="ion-ios7-pulse-strong"></i> &nbsp; &nbsp;Eat How Much &nbsp; </a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a ui-sref="home">Home</a></li>
+            <li><a ui-sref="hiw">About Us</a></li>
+            <li><a ui-sref="physicalprofile">Physical Profile</a></li>
+            <li><a ui-sref="mealplanner">Meal Planner</a></li>
+            <li><a ui-sref="reminder">Reminder</a></li>
+
+
+            <li><a ui-sref="blog">Discussion Portal</a></li>
+
+            <li><input class="btn btn-dafault" type="button" onclick="location.href='rish.html';" value="Login" style="margin-left:240px;margin-top:11px"></li>  
+              <li><input class="btn btn-primary" type="button" value="Sign up" style="margin-left:10px;margin-top:11px"></li>    
+        </ul>
+
+
+    </div>
+
+</header>
+  <div id="successful_login" class="fix-middle">
+  <div class="container text-center">
+    <h1>Welcome back to the internet!</h1>
+    <p>You've successfully managed to log into a nonexistant account in order to test a login dialog box.<br> If you like it, you are welcomed to use it wherever you want, no strings attached.<br><br><a href="#" class="link dialog-reset">Rerun the whole thing.</a></p>
+  </div>
+</div>
+<div id="successful_registration" class="fix-middle">
+  <div class="container text-center">
+    <h1>Welcome to the internet!</h1>
+    <p>You've successfully managed to register for a nonexistant account in order to test a registration dialog box.<br> If you like it, you are welcomed to use it wherever you want, no strings attached.<br><br><a href="#" class="link dialog-reset">Rerun the whole thing.</a></p>
+  </div>
+</div>
+
+<div id="dialog" class="dialog dialog-effect-in">
+  <div class="dialog-front">
+    <div class="dialog-content">
+      <form id="login_form" class="dialog-form" action="" method="POST">
+        <fieldset>
+          <legend>Log in</legend>
+          <div class="form-group">
+            <label for="user_username" class="control-label">Username:</label>
+            <input type="text" id="user_username" class="form-control" name="user_username" autofocus/>
+          </div>
+          <div class="form-group">
+            <label for="user_password" class="control-label">Password:</label>
+            <input type="password" id="user_password" class="form-control" name="user_password"/>
+          </div>
+          <div class="text-center pad-top-20">
+            <p>Have you forgotten your<br><a href="#" class="link"><strong>username</strong></a> or <a href="#" class="link"><strong>password</strong></a>?</p>
+          </div>
+          <div class="pad-top-20 pad-btm-20">
+            <input type="submit" class="btn btn-default btn-block btn-lg" value="Continue">
+          </div>
+          <div class="text-center">
+            <p>Do you wish to register<br> for <a href="#" class="link user-actions"><strong>a new account</strong></a>?</p>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+  <div class="dialog-back">
+    <div class="dialog-content">
+      <form id="register_form" class="dialog-form" action="" method="POST">
+        <fieldset>
+          <legend>Register</legend>
+          <div class="form-group">
+            <label for="user_username" class="control-label">Username:</label>
+            <input type="text" id="user_username" class="form-control" name="user_username"/> 
+          </div>
+          <div class="form-group">
+            <label for="user_password" class="control-label">Password:</label>
+            <input type="password" id="user_password" class="form-control" name="user_password"/>
+          </div>
+          <div class="form-group">
+            <label for="user_cnf_password" class="control-label">Confirm password:</label>
+            <input type="password" id="user_cnf_password" class="form-control" name="user_cnf_password"/>
+          </div>
+          <div class="form-group pad-top-20 form-group-checkbox">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" id="user_terms" name="user_terms">
+                I have read and I agree with the Terms and Conditions
+              </label>
+            </div>
+          </div>
+          <div class="pad-btm-20">
+            <input type="submit" class="btn btn-default btn-block btn-lg" value="Continue"/>
+          </div>
+          <div class="text-center">
+            <p>Return to <a href="#" class="link user-actions"><strong>log in page</strong></a>?</p>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+    <script src="js/index.js"></script>
+
+</div>

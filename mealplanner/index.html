@@ -1,0 +1,80 @@
+
+<link href="mealplanner/style.css" rel="stylesheet" />
+
+<div class="col-md-4">
+
+
+
+		<form>
+
+			<h1>Breakfast</h1>
+
+			<ul>
+				<li ng-repeat="bf in breakfast" ng-click="toggleActive(bf)" ng-class="{active:bf.active}">
+					{{bf.name}} <span>{{bf.price}}</span>
+				</li>
+			</ul>
+
+			<div class="total">
+					Total: <span>{{total_bf() }}</span>
+			</div>
+
+		</form>
+
+
+
+    </div>
+
+
+<div class="col-md-4">
+
+
+
+    <form>
+
+        <h1>Lunch</h1>
+
+        <ul>
+            <li ng-repeat="lnh in lunch" ng-click="toggleActive(lnh)" ng-class="{active:lnh.active}">
+                {{lnh.name}} <span>{{lnh.price}}</span>
+            </li>
+        </ul>
+
+        <div class="total">
+            Total: <span>{{total_lunch() }}</span>
+        </div>
+
+    </form>
+
+
+
+</div>
+
+
+<div class="col-md-4">
+
+
+
+    <form>
+
+        <h1>Dinner</h1>
+
+        <ul>
+            <li ng-repeat="din in dinner" ng-click="toggleActive(din)" ng-class="{active:din.active}">
+                {{din.name}} <span>{{din.price}}</span>
+            </li>
+        </ul>
+
+        <div class="total">
+            Total: <span>{{total_dinner() }}</span>
+        </div>
+
+    </form>
+
+
+
+</div>
+
+
+<center><h3>Total Calorie is {{total_cal}}</h3></center>
+
